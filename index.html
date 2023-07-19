@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Rock Paper and Scissors game ;)">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Aaradhy Sharma">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Assets/rps_icon.png" sizes="16x16">
+    <title>Rock/Paper/Scissors Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="bgVid">
+        <video id="backgroundVid" autoplay muted>
+            <source src="../Assets/Bg.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header>
+        <h1>Rock Paper Scissors Game</h1>
+    </header>
+    <main>
+        <div class="outputTab">
+            <div class="outputBox">
+                <span class="outputBoxText">Let's Play!</span>
+            </div>
+        </div>
+        <div class="inputTab">
+            <div class="inputBox">
+                <h3 class="inputBoxHeading">Input Box</h3>
+            </div>
+            <div class="buttonTab">
+                <div class="rockDiv">
+                    <button class="btn" id="rockBtn" data-selection="rock"> ✊🏻 </button>
+                </div>
+                <div class="paperDiv">
+                    <button class="btn" id="paperBtn" data-selection="paper">🖐🏻</button>
+                </div>
+                <div class="scissorsDiv">
+                    <button class="btn" id="scissorsBtn" data-selection="scissors">✌🏻</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="scoreTab">
+            <span class="scoreTabText">Your Score: <span class="outScore userScore">0</span></span> 
+            <span class="scoreTabText">Computer Score: <span class="outScore compScore">0</span></span>
+        </div>
+        <div class="reset">
+            <button class="resetBtn" id="resetBtn" onclick="resetScore()">Reset</button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
